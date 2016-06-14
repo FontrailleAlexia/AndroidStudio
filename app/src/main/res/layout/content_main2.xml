@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main2"
+    tools:context="com.example.lexyyaf.newworldandroid.Main2Activity"
+    android:background="#C29DCB">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pseudo"
+            android:id="@+id/textViewPseudo"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextNomInscription"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPseudo"
+            android:layout_below="@+id/textViewPseudo"
+            android:textColor="#FFFFFF"
+            android:layout_row="5"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adresse éléctronique"
+            android:id="@+id/textViewEmail"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextPseudo"
+            android:layout_row="6"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextEmail"
+            android:layout_below="@+id/textViewEmail"
+            android:textColor="#FFFFFF"
+            android:layout_row="7"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mot de passe"
+            android:id="@+id/textViewMdp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_row="8"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextMdp"
+            android:layout_below="@+id/textViewMdp"
+            android:textColor="#FFFFFF"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:password="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Confirmation mot de passe"
+            android:id="@+id/textViewMdp2"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextMdp"
+            android:layout_row="10"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextMdp2"
+            android:layout_below="@+id/textViewMdp2"
+            android:textColor="#FFFFFF"
+            android:layout_row="11"
+            android:layout_column="0"
+            android:password="true" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Prénom"
+            android:id="@+id/textViewFirstName"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextMdp2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="12"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextFirstName"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="13"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nom"
+            android:id="@+id/textViewLastName"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/editTextMdp2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_row="12"
+            android:layout_column="0"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextLastName"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/textViewFirstName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="13"
+            android:layout_column="0"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider"
+                android:id="@+id/buttonConfirmerInscription"
+                android:textColor="#FFFFFF"
+                android:background="#821B1B"
+                android:layout_alignBaseline="@+id/buttonAnnulerInscription"
+                android:layout_alignBottom="@+id/buttonAnnulerInscription"
+                android:layout_row="16"
+                android:layout_column="0"/>
+
+                    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:id="@+id/buttonAnnulerInscription"
+                android:textColor="#FFFFFF"
+                android:background="#821B1B"
+                android:layout_alignParentBottom="true"
+                android:layout_row="16"
+                android:layout_column="2"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/space" />
+            </LinearLayout>
+        </ScrollView>
+
+    </GridLayout>
+</RelativeLayout>

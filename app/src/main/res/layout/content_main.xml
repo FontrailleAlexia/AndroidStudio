@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity"
+    android:background="#7E9FD5">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPseudoInscription"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/textViewMotDePasse"
+        android:layout_marginBottom="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bienvenue sur New World"
+        android:id="@+id/textViewTitre"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="55px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pseudo"
+        android:id="@+id/textViewPseudoInscription"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/editTextPseudoInscription"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mot de passe"
+        android:id="@+id/textViewMotDePasse"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/editTextMotDePasse"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMotDePasse"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/buttonConnexion"
+        android:layout_marginBottom="72dp"
+        android:password="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:id="@+id/buttonConnexion"
+        android:textColor="#FFFFFF"
+        android:background="#243D91"
+        android:layout_marginBottom="122dp"
+        android:layout_above="@+id/textViewInscrivezVous"
+        android:layout_alignLeft="@+id/textViewTitre"
+        android:layout_alignStart="@+id/textViewTitre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Inscrivez-vous"
+        android:id="@+id/textViewInscrivezVous"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+        android:layout_alignBaseline="@+id/textViewPasser"
+        android:layout_alignBottom="@+id/textViewPasser"
+        android:layout_alignRight="@+id/buttonDeconnexion"
+        android:layout_alignEnd="@+id/buttonDeconnexion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Passer"
+        android:id="@+id/textViewPasser"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:textColor="#7E9FD5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deconnexion"
+        android:id="@+id/buttonDeconnexion"
+        android:background="#BDBDBD"
+        android:enabled="false"
+        android:layout_below="@+id/editTextMotDePasse"
+        android:layout_toRightOf="@+id/space2"
+        android:layout_toEndOf="@+id/space2" />
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/buttonDeconnexion"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space2" />
+</RelativeLayout>
